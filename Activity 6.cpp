@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Define structure
 struct Student {
     int studentID;
     string firstName;
@@ -16,9 +15,8 @@ int main() {
     cin >> num;
     cin.ignore();
     
-    Student s[num]; // 1D Array of Structure
+    Student s[num]; 
     
-    // Input student data
     for (int i = 0; i < num; i++) {
         cout << "\nStudent " << i + 1 << " details:" << endl;
         cout << "ID: ";
@@ -35,7 +33,6 @@ int main() {
         cin.ignore();
     }
     
-    // Output student data
     cout << "\nSTUDENT RECORDS\n";
     cout << "---------------------------------------------\n";
     for (int i = 0; i < num; i++) {
